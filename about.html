@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Credits</title>
+    <style>
+        body {
+            background-color: rgb(251, 249, 231);
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        body {
+            cursor: url('actual.jpg'), auto;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(252, 170, 184);
+        }
+
+        .exit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 30px;
+        }
+
+        .exit a {
+            color: black;
+        }
+
+        button {
+            font-size: 20px;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px 20px;
+        }
+
+        button:hover {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1> The magic behind it all!</h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="Sohaila.jpg" alt="Image of the Editor Sohaila">
+            <h1> Sohaila Mohammed</h1>
+        </div>
+        <div class="column">
+            <img src="Maitha.jpg" alt="Image of the Actor Maitha">
+            <h1> Maitha Almarzooqi</h1>
+        </div>
+        <div class="column">
+            <img src="Yara.jpg" alt="Image of the Actor Yara">
+            <h1> Yara Li</h1>
+        </div>
+    </div>
+
+    <div class="exit">
+        <a href="index.html"> Home page</a>
+    </div>
+
+    <button>Click me!</button>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function () {
+            document.body.style.backgroundColor = "coral";
+        });
+    </script>
+</body>
+
+</html>

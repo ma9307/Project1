@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+>
+
+<head>
+    <title>D2 Movie</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(251, 249, 231);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(252, 170, 184);
+            font-weight: normal;
+            border: 1em dotted coral;
+            padding: 1em;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 50px;
+        }
+
+        body {
+            cursor: url('actual.jpg'), auto;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            color: white;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>A Typical Journey to D2 Screening!</h1>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <a href="about.html">Meet the Team</a>
+        </div>
+
+        <div class="box">
+            <a href="watch.html">Click Here to Watch!</a>
+        </div>
+    </div>
+</body>
+
+</html>
